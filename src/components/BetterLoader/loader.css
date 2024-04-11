@@ -1,0 +1,24 @@
+.loaderWrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: #eee;
+}
+.loaderAnimation {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, #eeeeee 10%, #dddddd 50%, #eeeeee 90%);
+    animation: greyoutanimation 1s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
+  
+}
+@keyframes greyoutanimation{
+  0%{
+      left: -100%;
+  }
+  100%{
+      left: 100%;
+  }
+}
